@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Tribecrew — Vind werk. Vind talent.</title>
+  <meta name="description" content="Tribecrew verbindt freelancers in zorg, horeca en beveiliging met werkgevers die tijdelijke krachten zoeken." />
+  <meta property="og:title" content="Tribecrew — Vind werk. Vind talent." />
+  <meta property="og:description" content="Platform voor freelancers (zorg, horeca, beveiliging) en werkgevers die flexibele inhuur zoeken. Tijdelijke thuispagina." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      --accent:#0ea5e9;  /* sky-500 */
+      --accent-2:#0284c7;/* sky-600 */
+      --ink:#0f172a;     /* slate-900 */
+      --muted:#64748b;   /* slate-500 */
+      --bg:#f8fafc;      /* slate-50 */
+      --card:#ffffff;
+      --ring:rgba(14,165,233,.25);
+    }
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--ink);
+      background: radial-gradient(1000px 480px at 90% -10%, rgba(14,165,233,.08), transparent), var(--bg);
+      display:grid; place-items:center; padding:2rem;
+    }
+    .shell{ width:min(920px,100%); background:var(--card); border-radius:20px; box-shadow:0 10px 30px rgba(2,6,23,.08); border:1px solid #e2e8f0; overflow:hidden }
+    header{ display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:center; padding:1.25rem 1.25rem 0 }
+    .logo{ display:grid; place-items:center; }
+    .logo svg{ display:block }
+    .brand h1{ font-size: clamp(1.25rem, 2.4vw, 1.75rem); margin:.1rem 0 }
+    .brand p{ margin:0; color:var(--muted) }
+
+    .hero{ padding:1rem 1.25rem 1.25rem }
+    .hero h2{ font-size:clamp(1.5rem,3vw,2rem); margin:.25rem 0 .5rem }
+    .hero p{ color:var(--muted); margin:0 }
+
+    .cta{ display:grid; grid-template-columns:1fr; gap:.75rem; margin-top:1rem }
+    @media (min-width:640px){ .cta{ grid-template-columns:1fr 1fr } }
+    .card{
+      border:1px solid #e5e7eb; border-radius:16px; padding:1rem; background:#fff; display:grid; gap:.5rem
+    }
+    .card h3{ margin:.25rem 0; font-size:1.1rem }
+    .card p{ margin:0; color:var(--muted) }
+
+    .actions{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.5rem }
+    .btn{ display:inline-flex; align-items:center; justify-content:center; padding:.7rem 1rem; border-radius:999px; border:1px solid #e5e7eb; background:#fff; color:var(--ink); text-decoration:none; transition:box-shadow .15s ease, transform .05s ease, border-color .15s ease }
+    .btn:hover{ border-color:#cbd5e1; transform:translateY(-1px) }
+    .btn:focus{ outline:none; box-shadow:0 0 0 6px var(--ring) }
+    .btn.primary{ background:var(--accent); border-color:var(--accent); color:#fff }
+    .btn.primary:hover{ filter:brightness(.98) }
+
+    .status{ margin:1rem 1.25rem 0; display:inline-flex; gap:.5rem; align-items:center; padding:.4rem .65rem; border-radius:999px; background:#ecfeff; color:#155e75; border:1px solid #a5f3fc; font-size:.95rem }
+
+    footer{ display:flex; justify-content:space-between; gap:.5rem; flex-wrap:wrap; color:var(--muted); font-size:.9rem; padding:1rem 1.25rem 1.25rem; border-top:1px solid #eef2f7 }
+    .links{ display:flex; gap:.75rem; flex-wrap:wrap }
+
+    @media (prefers-reduced-motion:no-preference){
+      .shell{ animation:pop .45s ease-out }
+      @keyframes pop{ from{ opacity:0; transform:translateY(8px) scale(.99) } to{ opacity:1; transform:translateY(0) scale(1) } }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell" role="main">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <!-- Simple Tribecrew mark (TC) -->
+        <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="64" y2="64">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#0ea5e9"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#grad)"/>
+          <path d="M18 26h12" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          <path d="M30 26v20" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          <path d="M40 26c-3 0-6 3-6 6s3 6 6 6h6" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="brand">
+        <h1>Tribecrew</h1>
+        <p>Vind werk. Vind talent. Samen sterk.</p>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="title">
+      <h2 id="title">Tijdelijke thuispagina</h2>
+      <p>We bouwen aan een platform waar freelancers in <strong>zorg</strong>, <strong>horeca</strong> en <strong>beveiliging</strong> werk kunnen vinden, en werkgevers snel tijdelijke krachten kunnen boeken.</p>
+
+      <div class="cta">
+        <article class="card" aria-labelledby="freelancers">
+          <h3 id="freelancers">Ik ben freelancer</h3>
+          <p>Laat je gegevens achter om als eerste toegang te krijgen.</p>
+          <div class="actions" role="group" aria-label="Freelancer acties">
+            <a class="btn primary" href="mailto:join@tribecrew.example?subject=Aanmelden%20freelancer&body=Naam%3A%20%0ASector%20(zorg%2Fhoreca%2Fbeveiliging)%3A%20%0ARegio%3A%20%0ABeschikbaarheid%3A%20" aria-label="Aanmelden als freelancer via e-mail">Aanmelden</a>
+            <a class="btn" href="#" aria-label="Meer informatie voor freelancers">Meer info</a>
+          </div>
+        </article>
+        <article class="card" aria-labelledby="employers">
+          <h3 id="employers">Ik zoek personeel</h3>
+          <p>Vertel ons wat je nodig hebt — we koppelen je aan beschikbare professionals.</p>
+          <div class="actions" role="group" aria-label="Werkgever acties">
+            <a class="btn primary" href="mailto:hire@tribecrew.example?subject=Personeel%20gezocht&body=Bedrijf%3A%20%0ASector%3A%20%0ALocatie%3A%20%0ADatums%2Ftijden%3A%20%0ATaak%3A%20" aria-label="Vraag personeel aan via e-mail">Vraag aan</a>
+            <a class="btn" href="#" aria-label="Meer informatie voor werkgevers">Tarieven</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="status" aria-live="polite">
+        <span aria-hidden="true">🚧</span>
+        <span>Betaalbare MVP in ontwikkeling — live aanmeldingen volgen.</span>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2025 Tribecrew</span>
+      <div class="links">
+        <a class="btn" href="mailto:hello@tribecrew.example" aria-label="Neem contact op">Contact</a>
+        <a class="btn" href="#" aria-label="LinkedIn" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#" aria-label="Privacybeleid">Privacy</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
